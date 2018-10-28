@@ -1,0 +1,24 @@
+import 'http.osic';
+
+class IndexHandler(http.HTTPHandler) {
+	def GET() {
+		return;
+	}
+
+	def POST() {
+		return;
+	}
+}
+
+def main() {
+	var handlers = {
+		'/': IndexHandler
+	};
+
+	var app = http.HTTPApplication(handlers);
+	var server = http.HTTPServer(app);
+
+	server.serve_forever();
+}
+
+main();
