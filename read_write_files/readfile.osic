@@ -1,0 +1,8 @@
+import 'os';
+
+var file = os.open("foobar.txt", 2);
+var content = os.read(file);
+
+os.close(file);
+print(content);
+

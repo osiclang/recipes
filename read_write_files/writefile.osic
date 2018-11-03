@@ -1,0 +1,8 @@
+import 'os';
+
+var content = "Hello World - it's me again!";
+var file = os.open('foobar.txt', 2);
+    
+os.write(file, content);
+os.close(file);
+
